@@ -1,0 +1,110 @@
+body 
+{
+  font-family: Calibri, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #f9e299, #f799ba, #f2667f, #c466e5, #9966ff, #66a3ff);
+  background-size: 1500% auto;
+  animation: gradientAnimation 20s ease infinite;;
+}
+
+/*Fond d'écran animé*/
+@keyframes gradientAnimation 
+{
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.container 
+{
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  justify-content: space-between;
+  position: relative;
+}
+
+/*Titre en haut de la page*/
+h1 
+{
+  color: white;
+  text-align: center;
+}
+
+/*Titre de chaque évènement*/
+h2 
+{
+  color:rgb(203, 32, 32);
+  text-align: center;
+  padding:0;
+  margin:0;
+}
+
+/*Description de chaque évènement*/
+h3 
+{
+  text-align: center;
+  color:rgb(219, 95, 28);
+  margin:10px;
+}
+
+/*Autres informations de chaque évènement*/
+h4
+{
+  text-align: center;
+}
+
+/* Liste d'événements */
+#evenements-list 
+{
+  list-style: none;
+  padding: 0;
+}
+
+/*Case de chaque évènement*/
+#evenements-list li 
+{
+  background-color: #ffffff; 
+  opacity:0.85;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  color: #333; 
+}
+
+/*Texte à l'intérieur de chaque case d'évènement*/
+#evenements-list li p 
+{
+  margin: 5px 0;
+}
+
+.bouton 
+{
+  background-color: white;
+  opacity: 0.85;
+  color:rgb(203, 32, 32); 
+  border: none; 
+  padding: 10px 20px; 
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/*Bouton ajout évènements aligné à gauche*/
+#Ajout_evenements 
+{
+  margin-left: auto;
+}
+
+/*Bouton accueil aligné à droite*/
+#Accueil 
+{
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+  box-sizing: border-box;
+}

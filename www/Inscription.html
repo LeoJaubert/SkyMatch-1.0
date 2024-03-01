@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, please refer to the docs:
+            https://cordova.apache.org/docs/en/latest/
+        Some notes:
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">-->
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <link rel="stylesheet" href="css/Inscription.css">
+        <title>Page d'inscription</title>
+    </head>
+    <body>
+        <!-----------------------------------Easter Egg------------------------------------->
+        <!--<button class="invisible-button" onclick="Curseur()"></button>-->
+        <!--------------------------------------Partie inscription--------------------------------->
+        <div class="app">
+            <!-------------------------------Body Genre-------------------------------->
+            <label><h1>Genre :</h1></label>
+            <input id="monsieur" name="genre" type="radio" value="Monsieur">
+            <label for="monsieur">Monsieur</label>
+            <input id="madame" name="genre" type="radio" value="Madame">
+            <label for="madame">Madame</label>
+            <div id="erreurgenre"></div>
+            <!-----------------------------Body Nom et prénom------------------------------------>
+            <label for><h1>Nom :</h1></label>
+            <input id="nom" name="nom" type="text" placeholder="Gambier" onchange="controlenom()">
+            <div id="erreurnom"></div>
+            <label for><h1>Prénom :</h1></label>
+            <input id="prenom" name="prenom" type="text" placeholder="Lancelot" onchange="controleprenom()"><br>
+            <div id="erreurprenom"></div>
+            <!----------------------------------------Body Mail---------------------------------->
+            <label for><h1>Mail :</h1></label>
+            <input id="email" name="email" type="email" placeholder="lancelot.gambier@student.junia.com" onchange="controlemail()">
+            <div id="erreurmail"></div>
+            <h2>OU</h2>
+            <!-------------------------------Body téléphone-------------------------------------->
+            <label for><h1>Numéro de téléphone :</h1></label>
+            <input id="num" type="text" placeholder="07 81 66 32 55" onchange="controlenumtel()"/><br>
+            <div id="erreurnum"></div>
+            <!----------------------------Body Mot de passe-------------------------------------->
+            <label for><h1>Création d'un mot de passe :</h1></label>
+            <input id="mdp" type="password" placeholder="8 à 30 caractères, minimum 1 majuscule, 1 minuscule, 1 chiffre." onchange="checkPassword()"/>
+            <div id="erreurmdp"></div>
+            <label for><h1>Confirmez le mot de passe :</h1></label>
+            <input id="samemdp" type="password" onchange="checksamePassword()"/>
+            <div id="erreursamemdp"></div>
+            <!------Bouton final qui exécute toutes les fonctions ci-dessus dans le script----->
+            <button id="monBouton" class="bouton" onclick="boutoncolorenouvellefenetre()">Valider</button>
+        </div>     
+        <script src="cordova.js"></script>
+        <script src="js/Inscription.js"></script>
+    </body>
+</html>

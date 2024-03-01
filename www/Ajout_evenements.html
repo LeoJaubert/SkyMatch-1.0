@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Formulaire d'événement</title>
+  <!-- Lien vers les pages javascript et css -->
+  <link rel="stylesheet" href="css/Ajout_evenements.css">
+  <script src="js/Ajout_evenements.js"></script>
+</head>
+
+<body>
+  <h1>Formulaire d'événement</h1>
+  <!--Balise form permet de créer un formulaire dans lequel il y a les champs de texte etc.-->
+  <form id="formulaire-evenement"  method="post" onsubmit="validateForm(event)">
+
+  <!--Label combine à input permet de créer des zones de texte récupérables ensuite pour les mettre dans la BDD-->
+
+  <label for="titre" class="title-label required-field required-field-label"> Titre :</label>
+  <input type="text" id="titre" name="titre" required class="centered-input">
+
+  <label for="description" class="title-label">Description :</label>
+  <input id="description" name="description"  class="centered-input">
+
+  <label for="heure_debut" class="title-label required-field required-field-label">Heure de début :</label>
+  <input type="time" id="heure_debut" name="heure_debut" required class="centered-input">
+
+  <label for="heure_fin" class="title-label required-field required-field-label">Heure de fin :</label>
+  <input type="time" id="heure_fin" name="heure_fin" required class="centered-input">
+
+  <label for="date_debut" class="title-label">Date de début :</label>
+  <input type="date" id="date_debut" name="date_debut" class="centered-input">
+
+  <label for="date_fin" class="title-label">Date de fin :</label>
+  <input type="date" id="date_fin" name="date_fin" class="centered-input">
+
+  <label for="lieu" class="title-label required-field required-field-label">Lieu :</label>
+  <input type="text" id="lieu" name="lieu" required class="centered-input">
+
+  <label for="type_evenement_id" class="title-label">Type d'événement :</label>
+
+  <!--Menu déroulant-->
+  <select id="type_evenement_id" name="type_evenement_id" class="title-label" class="centered-input">
+    <option value="1">Sport</option>
+    <option value="2">Musique</option>
+    <option value="3">Art</option>
+    <option value="4">Histoire</option>
+    <option value="5">Ludique</option>
+    <option value="6">Culinaire</option>
+  </select>
+
+  <h2 class="title-label subtitle">Les météos :</h2>
+
+
+  <div class="checkbox-container">
+    <!--Même fonctionnement qu'au dessus mais au lieu d'avoir des blocs dans lequel on peut écrire on a des cases à cocher (grâce au type "checkbox") -->
+    <label for="soleil">Soleil</label>
+    <input type="checkbox" id="soleil" name="meteo" value="1">
+
+    <label for="pluie">Pluie</label>
+    <input type="checkbox" id="pluie" name="meteo" value="2">
+
+    <label for="neige">Neige</label>
+    <input type="checkbox" id="neige" name="meteo" value="3">
+
+    <label for="orage">Orage</label>
+    <input type="checkbox" id="orage" name="meteo" value="4">
+
+    <label for="brouillard">Brouillard</label>
+    <input type="checkbox" id="brouillard" name="meteo" value="5">
+  </div>
+
+  <button type="submit">Enregistrer</button>
+</form>
+</body>
+</html>

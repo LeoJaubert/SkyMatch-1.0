@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="fr.grafikart.projet" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>SkyMatch</name>
+    <description>Sample Apache Cordova App</description>
+    <author email="dev@cordova.apache.org" href="https://cordova.apache.org">
+        Apache Cordova Team
+    </author>
+     <platform name ="android">
+     <!--<preference name="android-targetSdkVersion" value="29" />
+     <preference name="android-targetSdkVersion" value="30" />
+     <preference name="android-targetSdkVersion" value="31" />
+     <preference name="android-targetSdkVersion" value="32" />
+     <preference name="android-targetSdkVersion" value="33" />-->
+<icon src="www/img/iconebiencarre36.png" density="ldpi" />
+<icon src="www/img/iconebiencarre48.png" density="mdpi" />
+<icon src="www/img/iconebiencarre72.png" density="hdpi" />
+<icon src="www/img/iconebiencarre96.png" density="xhdpi" />
+<icon src="www/img/iconebiencarre144.png" density="xxhdpi" />
+<icon src="www/img/iconebiencarre192.png" density="xxxhdpi" />
+</platform>
+<access origin="*" />
+<allow-navigation href="*" />
+<allow-intent href="*" />
+  <content src="Accueil.html" />
+</widget>

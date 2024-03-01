@@ -1,0 +1,117 @@
+/* Styles pour le corps du document */
+body
+{
+    font-family: Arial, sans-serif; /* Police de caractères utilisée */
+    padding: 20px; /* Espace entre <body> et le reste de la page */
+    background: linear-gradient(to bottom, #4d94ff, #999999); /* Dégradé linéaire pour le fond */
+}
+
+/* Styles pour le titre formulaire d'évènement */
+h1
+{
+    margin-bottom: 20px; /* espace entre le titre et le formulaire */
+    text-align: center; /* centrage du texte */
+    color: #333; 
+}
+
+/* Styles pour le formulaire */
+form
+{
+    display: flex; /* Affiche les éléments du formulaire en tant que conteneur flexible */
+    flex-direction: column; /* Empilement vertical */
+    max-width: 600px; /* Largeur maximale*/
+    margin: 0 auto; /* Centrage du formulaire */
+    background-color: #fff; 
+    padding: 20px; /* Espace entre les élémentes  */
+    border-radius: 5px; /* Coins arrondis */
+}
+
+/* Styles pour les étiquettes des champs de saisie */
+label
+{
+    margin-bottom: 10px; /* Marge inférieure pour créer un espace avec les éléments suivants */
+    font-weight: bold; /* Poids de la police en gras */
+    color: #555;
+}
+
+/* Styles pour les champs de saisie et les listes déroulantes */
+input,
+select
+{
+    padding: 8px; /* Espace entre les champs de saisie */
+    border: 1px solid #ccc; /* Bordure champs de texte*/
+    border-radius: 4px; /* Coins arrondis des champs de saisie */
+    font-size: 14px; 
+    margin-bottom: 10px; /* Espacement entre les différentes champs/titre */
+}
+
+/* Styles pour les champs obligatoires */
+.required-field
+{
+    border-color: red; /* Couleur de la bordure en rouge */
+}
+
+.required-field-label::before
+{
+    content: "* "; /* Ajoute une astérisque avant le texte de l'étiquette */
+    color: red;
+    font-weight: bold; /* Police en gras */
+}
+
+/* Styles pour le bouton */
+button[type="submit"]
+{
+    padding: 10px 20px; /* Espace entre le bouton est le champ du texte */
+    background-color: #4CAF50; 
+    color: #fff; 
+    border: none; /* Supprime la bordure */
+    border-radius: 4px; /* Coins arrondis  */
+    font-size: 16px; /* Taille de la police */
+    cursor: pointer; /* Curseur de souris en pointeur */
+}
+
+/*Bouton quand on met la souris dessus*/
+button[type="submit"]:hover
+{
+    background-color: #45a049; 
+}
+
+/* Styles pour les titres des sections */
+.title-label
+{
+    text-align: center; /* Centrage du texte */
+    font-size: 14px; /* Taille de la police */
+}
+
+/* Styles pour les champs de saisie centrés */
+.centered-input
+{
+    text-align: center; /* Centrage du texte à l'intérieur des champs de saisie */
+}
+
+/* Styles pour les cases à cocher */
+.checkbox-container
+{
+    display: flex; /* Affiche les éléments en tant que conteneur flexible */
+    justify-content: center; /* Centre les cases */
+    gap: 10px; /* Espacement entre les cases */
+}
+
+.checkbox-container label
+{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; /* Centre le texte */
+    font-size: 14px; /* Taille de la police */
+}
+
+/* Styles pour les météos */
+.subtitle
+{
+    font-size: 16px; 
+    margin-top: 10px; 
+    color: #555; 
+    margin-bottom: 10px; 
+    font-weight: bold; 
+}

@@ -1,0 +1,198 @@
+.container 
+{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+body 
+{
+    margin: 0;
+    padding: 0;
+}
+
+/*Rectangle blanc*/
+#baseMeteo 
+{
+    text-align: center;
+    padding: 2vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 2vh;
+    box-shadow: 0 0 10vh rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:45vh;
+    height:75vh;
+}
+
+/*Titre de la météo*/
+h1 
+{
+    font-family: italic Calibri, serif;
+    font-size: 4vh;
+    margin-top:1vh;
+    margin-bottom: 1vh;
+}
+
+/*Titre de la température*/
+h2
+{
+    font-size:18px;
+    margin-top:4vh;
+}
+
+/*Zone qui affiche temperature et icône météo*/
+.meteo
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#temperatureLabel 
+{
+    font-size: 40px;
+    margin-right: 10px;
+}
+
+/*Cadre transparent de l'icône*/
+#IconeMeteo
+{
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Icône en elle-même*/
+#IconeMeteo img 
+{
+    width: 70px;
+    height: 70px;
+}
+
+#villeLabel,
+#humiditeLabel,
+#ventLabel,
+#paysLabel 
+{
+    font-size: 3vh;
+    margin-top: 1em;
+}
+
+#villeLabel::before 
+{
+    content: '🌍 ';
+}
+
+#humiditeLabel::before 
+{
+    content: '💧 ';
+}
+
+#ventLabel::before 
+{
+    content: '🌬️ ';
+}
+
+/*--------------------------------Fonds d'écran pour chaque météo-------------*/
+
+.weather-thunderstorm 
+{
+    background-color: rgb(172, 170, 119);
+}
+
+.weather-rain 
+{
+    background-color: slategray;
+}
+
+.weather-snow 
+{
+    background-color: ghostwhite;
+}
+
+.weather-fog 
+{
+    background-color: rgba(169, 169, 169, 0.797);
+}
+
+.weather-clear 
+{
+    background-color: rgb(0, 119, 255);
+}
+
+.weather-default 
+{
+    background-color: lightsteelblue;
+}
+
+.weather-night
+{
+    background-color: #313338;
+}
+
+/*--------------------------------------Boutons--------------------------*/
+
+#Boutons 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#BoutonConnexion
+{
+    display: block;
+    width: 15em;
+    height: 2.5em;
+    margin-bottom: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/*Bouton quand on a la souris dessus*/
+#BoutonConnexion:hover 
+{
+    background-color: #0056b3;
+}
+  
+#BoutonInscription
+{
+    display: block;
+    width: 15em;
+    height: 2.5em;
+    margin-bottom: 10px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}  
+
+/*Bouton quand on a la souris dessus*/
+#BoutonInscription:hover
+{
+    background-color: #07880e;
+}
+
+/*Ligne pour séparer les 2 boutons*/
+.line 
+{
+    width: 15em;
+    height: 0.1em;
+    background-color: rgba(255, 255, 255, 0.379);
+    margin-bottom: 10px;
+  }

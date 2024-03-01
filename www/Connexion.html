@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <link rel="stylesheet" href="css/Connexion.css">
+        <title>Page de connexion</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Connexion à votre compte</h1>
+            <!----------------------------------------Body Mail---------------------------------->
+            <label for><h2>Mail :</h2></label>
+            <input id="email" name="email" type="email" placeholder="lancelotgambier08@gmail.com" onchange="controlemail()">
+            <!--<h3>OU</h3>-->
+            <!-------------------------------Body téléphone--------------------------------------
+            <label for><h2>Numéro de téléphone :</h2></label>
+            <input id="num" type="text" placeholder="0781663255" onchange="controlenumtel()" required/><br>
+            <div id="erreurnum"></div><br><br>-->
+            <!----------------------------Body Mot de passe-------------------------------------->
+            <label for><h2>Entrez votre mot de passe :</h2></label>
+            <input id="mdp" type="password" onchange="checkPassword()"/><br>
+            <!--Message d'erreur-->
+            <div id="erreur"></div><br>
+            <!--Bouton pour valider -->
+            <button id="BoutonValidation" class="bouton" onclick="bouton()">Valider</button>
+        </div>     
+        <script src="cordova.js"></script>
+        <script src="js/Connexion.js"></script>
+    </body>
+</html>

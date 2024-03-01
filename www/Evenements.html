@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Affichage d'événements</title>
+    <link rel="stylesheet" href="css/Evenements.css">
+    <script src="js/Evenements.js"></script>
+    <!--------------------Bibliothèque pour avoir le bon format de date-------------------------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/fr.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>En vue du temps et de votre localisation, nous vous proposons ces différentes activités :</h1>
+      <ul id="evenements-list"></ul>
+      <button id="Ajout_evenements" class="bouton" onclick="redirectionajout()">Ajouter un évènement</button>
+      <button id="Accueil" class="bouton" onclick="redirectionaccueil()">Revenir à l'accueil</button>
+    </div>
+  </body>
+</html>

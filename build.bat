@@ -1,0 +1,2 @@
+Cordova build android
+pause
